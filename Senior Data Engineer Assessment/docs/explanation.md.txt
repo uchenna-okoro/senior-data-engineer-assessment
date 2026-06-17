@@ -1,0 +1,74 @@
+# Project Explanation — Senior Data Engineer Assessment
+
+## Overview
+This project demonstrates data engineering and BI automation skills using three core tasks:
+
+- Dynamic Row Level Security (DAX)
+- Slowly Changing Dimension Type 2 (SQL)
+- BI Automation using PowerShell pseudo-script
+
+---
+
+# Task 1 — Dynamic RLS (DAX)
+
+## Objective
+To ensure managers can only see their own data and all employees under their hierarchy.
+
+## Approach
+- Used `USERPRINCIPALNAME()` to identify logged-in user
+- Used hierarchical logic with `PATH()` function
+- Applied filter on employee hierarchy table
+
+## Outcome
+Managers can securely view:
+- Their own records
+- All subordinate employees
+
+---
+
+# Task 2 — SCD Type 2 (T-SQL)
+
+## Objective
+Track historical changes in asset data over time.
+
+## Approach
+- New records are inserted into dimension table
+- Existing records are checked for changes
+- Old records are expired using `EffectiveTo` and `IsCurrent = 0`
+- New versions are inserted with updated values
+
+## Outcome
+Full historical tracking of asset changes is maintained.
+
+---
+
+# Task 3 — BI Automation (PowerShell Pseudo-Script)
+
+## Objective
+Automate deployment of BI artifacts from Dev to Test environment.
+
+## Approach
+- Simulated authentication using system-managed identity
+- Defined Dev and Test environments
+- Used pseudo REST API calls for deployment
+- Added validation and refresh steps
+
+## Outcome
+End-to-end deployment pipeline simulation is achieved.
+
+---
+
+# Tools Used
+- Power BI (DAX)
+- SQL Server (T-SQL)
+- PowerShell (Pseudo Automation)
+- BI REST API Concepts
+
+---
+
+# Conclusion
+This project demonstrates strong understanding of:
+- Data modeling
+- Security (RLS)
+- Data warehousing (SCD Type 2)
+- BI automation and deployment pipelines
