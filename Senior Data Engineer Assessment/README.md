@@ -1,5 +1,15 @@
 
 # Senior Data Engineer Assessment
+#Architecture
+
+Senior Data Engineer Assessment/
+│
+├── Task1.sql
+├── Task2.sql
+├── Task3.ipynb / Task3.ps1
+├── README.md
+└── docs/
+    └── explanation.md
 
 ## Overview
 This repository contains solutions for:
